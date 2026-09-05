@@ -19,7 +19,7 @@ WeatherSync is a responsive weather application built with Node.js, Express, EJS
 - OpenWeatherMap API
 
 ## Project Structure
-
+```
 WeatherAPI/
 ├── index.js
 ├── package.json
@@ -33,7 +33,7 @@ WeatherAPI/
 │       ├── header.ejs
 │       └── footer.ejs
 └── README.md
-
+```
 ## Installation
 ```
 git clone (https://github.com/kumaranurag00748-byte/Weather_Sync.git)
