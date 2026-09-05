@@ -1,0 +1,77 @@
+<header class="p-3 mb-3 border-bottom">
+  <div class="container">
+    <div class="header-content">
+      <a
+        href="/"
+        class="header-logo-link d-flex align-items-center link-body-emphasis text-decoration-none"
+      >
+        <img
+          class="weather-logo"
+          src="./images/WeatherSync-logo.png"
+          width="135"
+          height="60"
+          alt="logo"
+        />
+      </a>
+      <ul class="header-nav nav justify-content-end mb-0">
+        <li><a href="/" class="nav-link px-2 link-body-emphasis">Home</a></li>
+        <li class="nav-item dropdown-menu-wrapper">
+          <button
+            type="button"
+            class="nav-link px-2 link-body-emphasis nav-dropdown-toggle"
+            aria-expanded="false"
+            aria-controls="contact-dropdown-menu"
+          >
+            Contact
+          </button>
+          <ul id="contact-dropdown-menu" class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="mailto:kumar.anurag00748@gmail.com"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.linkedin.com/in/anurag-kumar-sa84an48/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://github.com/kumaranurag00748-byte/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form id="weather-search" class="header-search" role="search">
+        <div class="search-fields">
+          <input
+            id="city-search"
+            name="city"
+            type="search"
+            class="form-control"
+            placeholder="City"
+            aria-label="City"
+            required
+          />
+          <input
+            id="country-search"
+            name="country"
+            type="search"
+            class="form-control"
+            placeholder="Country code (e.g. IN, GB, US)"
+            aria-label="Country code"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
