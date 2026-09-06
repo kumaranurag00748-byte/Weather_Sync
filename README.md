@@ -53,4 +53,5 @@ The frontend displays the temperature, weather condition, humidity, wind speed a
 ## Searches
 
 ![Search-1](public/images/Search-1.png)
+
 ![Search-2](public/images/Search-2.png)
