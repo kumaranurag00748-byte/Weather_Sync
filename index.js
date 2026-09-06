@@ -1,14 +1,19 @@
 import express from "express";
 import axios from "axios";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
-const port = 3000;
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-const API_KEY = "";
+const API_KEY = "7dcaa70e6c935e353663e106e372746e";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-app.set("views", "./views");
-app.use(express.static("public"));
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.render("index");
@@ -24,11 +29,7 @@ app.get("/api/weather", async (req, res) => {
   }
 
   try {
-    const params = {
-      appid: API_KEY,
-      units: "metric",
-    };
-
+    const params = { appid: API_KEY, units: "metric" };
     if (city) {
       params.q = country ? `${city},${country}` : city;
     } else {
@@ -42,7 +43,6 @@ app.get("/api/weather", async (req, res) => {
     const status = error.response?.status || 502;
     const message =
       error.response?.data?.message || "Unable to fetch weather data.";
-
     return res.status(status).json({ error: message });
   }
 });
