@@ -1,7 +1,7 @@
 # WeatherSync
 WeatherSync is a responsive weather application built with Node.js, Express, EJS, and the OpenWeatherMap API. It displays real-time weather information with dynamic day and night backgrounds.
 
-![Homepage]("./public/images/Homepage.png")
+![Homepage]("public/images/Homepage.png")
 
 ## Features
 - Search weather by city and country code
@@ -52,5 +52,5 @@ The frontend displays the temperature, weather condition, humidity, wind speed a
 
 ## Searches
 
-![Search-1](./public/images/Search-1.png)
-![Search-2](./public/images/Search-2.png)
+![Search-1]("public/images/Search-1.png")
+![Search-2]("public/images/Search-2.png")
