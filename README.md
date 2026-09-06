@@ -1,6 +1,8 @@
 # WeatherSync
 WeatherSync is a responsive weather application built with Node.js, Express, EJS, and the OpenWeatherMap API. It displays real-time weather information with dynamic day and night backgrounds.
 
+![Homepage]("./public/images/Homepage.png")
+
 ## Features
 - Search weather by city and country code
 - Temperature, conditions, humidity, wind, sunrise, and sunset details
@@ -47,3 +49,8 @@ Add your OpenWeatherMap API key in index.js, run node index.js and open localhos
 ## How It Works
 Users enter a city and an optional country code in the search form. JavaScript sends this information to the Express backend through the /api/weather endpoint. The backend uses Axios to request current weather data from OpenWeatherMap and returns the response to the browser.
 The frontend displays the temperature, weather condition, humidity, wind speed and direction, sunrise, and sunset times. It also selects a suitable day or night background based on the weather condition and API icon. If the city is invalid or the API request fails, an error message is shown.
+
+## Searches
+
+![Search-1](./public/images/Search-1.png)
+![Search-2](./public/images/Search-2.png)
