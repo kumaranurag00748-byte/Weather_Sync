@@ -57,8 +57,8 @@ The frontend displays the temperature, weather condition, humidity, wind speed a
 ![Search-2](public/images/Search-2.png)
 
 
-**Caution Regarding API Keys**
+# Caution Regarding API Keys
 A demo OpenWeatherMap API key is currently included in the repository configuration for quick setup and testing convenience. However, please note:
-**Shared Rate Limits:** Free-tier keys have strict call limits (e.g., 60 calls/minute, 1,000 calls/day). If multiple users test the app simultaneously, you may experience `429 Too Many Requests` errors.
-**Service Disruption:** The provided demo key may be rotated or revoked at any time without notice.
-**Best Practice:** For reliable testing and production deployments, please [sign up for a free OpenWeatherMap account](https://openweathermap.org/api) to generate your own API key.
+- **Shared Rate Limits:** Free-tier keys have strict call limits (e.g., 60 calls/minute, 1,000 calls/day). If multiple users test the app simultaneously, you may experience `429 Too Many Requests` errors.
+- **Service Disruption:** The provided demo key may be rotated or revoked at any time without notice.
+- **Best Practice:** For reliable testing and production deployments, please [sign up for a free OpenWeatherMap account](https://openweathermap.org/api) to generate your own API key.
